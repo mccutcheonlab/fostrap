@@ -69,12 +69,16 @@ def read_in_data(cells, normalize_to_area):
             continue
         
         df_mouse = pd.concat([df_id, df_cells], axis=1)
-        df_mouse.set_index("mouse", drop=True, inplace=True)
+        # df_mouse.set_index("mouse", drop=True, inplace=True)
         
         if not df.empty:
             df = pd.concat([df, df_mouse], axis=0)
         else:
             df  = df_mouse
+    
+    # df = df.reset_index()
+    # idx_cols = df_new.columns[:6].to_list()
+    df.set_index(cols, inplace=True)
     
     return df
 # %%
@@ -100,9 +104,12 @@ def normalize_df(df):
                 continue
             normalized_df[column] = (df[column] - df[column].mean()) /df[column].std()
             
-
     return normalized_df
 
 df_cells_norm = normalize_df(df_cells)
 df_area_norm = normalize_df(df_area)
+
+# %%
+
+df_new.xs(("nr", "casein"), level=("diet", "solution2"), axis=0, drop_level=False)
 # %%
