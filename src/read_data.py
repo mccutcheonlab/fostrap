@@ -84,7 +84,7 @@ df_coloc = read_in_data("coloc", False)
 
 df_area_trap = read_in_data("trap", True)
 df_area_fos = read_in_data("fos", True)
-df_coloc = read_in_data("coloc", True)
+df_area_coloc = read_in_data("coloc", True)
 
 # %%
 df_cells = pd.concat([df_trap, df_fos, df_coloc])
