@@ -1,10 +1,8 @@
 # %%
 import csv
-import os
 import pandas as pd
-import matplotlib.pyplot as plt
-
-import trompy as tp
+from pandas.api.types import is_numeric_dtype
+import numpy as np
 
 folder = "../"
 # %%
@@ -44,8 +42,9 @@ def get_cell_data(mouse, cells, normalize_to_area=False):
         area=row[2]
 
         if normalize_to_area:
+            scale_factor = (2.6**2)*1e6 # pixels per mm
             try:
-                nutil_data[key]=[int(object_count) / int(area)]
+                nutil_data[key]=[int(object_count) / (int(area)/scale_factor)]
             except ZeroDivisionError:
                 nutil_data[key]=0
         else:
@@ -63,7 +62,7 @@ def read_in_data(cells, normalize_to_area):
     for row in mouserows:
         df_id = pd.DataFrame([[row[0], row[1], row[2], row[3], row[4], cells]], columns=cols)
         try:
-            df_cells = get_cell_data(row[0], cells, normalize_to_area=False)
+            df_cells = get_cell_data(row[0], cells, normalize_to_area=normalize_to_area)
             print("Yay for {}".format(row[0]))
         except FileNotFoundError:
             print("Data for {} do not seem to be available yet.".format(row[0]))
@@ -81,13 +80,29 @@ def read_in_data(cells, normalize_to_area):
 # %%
 df_trap = read_in_data("trap", False)
 df_fos = read_in_data("fos", False)
+df_coloc = read_in_data("coloc", False)
 
 df_area_trap = read_in_data("trap", True)
 df_area_fos = read_in_data("fos", True)
+df_coloc = read_in_data("coloc", True)
 
 # %%
-df_cells = pd.concat([df_trap, df_fos])
-df_area = pd.concat([df_area_trap, df_area_fos])
+df_cells = pd.concat([df_trap, df_fos, df_coloc])
+df_area = pd.concat([df_area_trap, df_area_fos, df_coloc])
 
+def normalize_df(df):
 
+    normalized_df = df.copy()
+    for column in df.columns:
+        if is_numeric_dtype(df[column]):
+            if np.sum(df[column]) == 0:
+                normalized_df.drop([column], axis=1, inplace=True)
+                continue
+            normalized_df[column] = (df[column] - df[column].mean()) /df[column].std()
+            
+
+    return normalized_df
+
+df_cells_norm = normalize_df(df_cells)
+df_area_norm = normalize_df(df_area)
 # %%
