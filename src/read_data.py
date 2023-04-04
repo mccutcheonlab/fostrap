@@ -110,6 +110,6 @@ df_cells_norm = normalize_df(df_cells)
 df_area_norm = normalize_df(df_area)
 
 # %%
-
-df_new.xs(("nr", "casein"), level=("diet", "solution2"), axis=0, drop_level=False)
+# to select
+# df_new.xs(("nr", "casein"), level=("diet", "solution2"), axis=0, drop_level=False)
 # %%
