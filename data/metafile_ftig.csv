@@ -1,0 +1,49 @@
+animal,diet,sex,infusion1,infusion2,folder,slide1A,slide1B,slide1C
+FT106,NR,male,casein,casein,IG_FosTRAP_male/Folder_20220617/,FT106_1A_01.vsi,FT106_2A_02.vsi,none
+FT108,PR,male,casein,malt,IG_FosTRAP_male/Folder_20220617/,FT108_1A_03.vsi,FT108_2A_04.vsi,none
+FT109,PR,male,casein,malt,IG_FosTRAP_male/Folder_20220617/,FT109_1A_05.vsi,FT109_2A_06.vsi,none
+FT110,NR,male,casein,malt,IG_FosTRAP_male/Folder_20220617/,FT110_1A_07.vsi,none,none
+FT111,NR,male,casein,malt,IG_FosTRAP_male/Folder_20220617/,FT111_1A_08.vsi,FT111_2A_09.vsi,none
+FT112,PR,male,casein,water,IG_FosTRAP_male/Folder_20220617/,FT112_1A_10.vsi,FT112_2A_11.vsi,none
+FT157,PR,male,casein,water,IG_FosTRAP_male/Folder_20220618/,FT157_1A_18.vsi,FT157_2A_19.vsi,none
+FT161,NR,male,casein,malt ,IG_FosTRAP_male/Folder_20220618/,FT161_1A_20.vsi,FT161_2A_21.vsi,none
+FT162,NR,male,casein,malt ,IG_FosTRAP_male/Folder_20220618/,FT162_1A_22.vsi,FT162_2A_23.vsi,none
+FT118,NR,male ,casein,casein,IG_FosTRAP_male/Folder_20220618/,FT118_1A_12.vsi,FT118_2A_13.vsi,none
+FT119,PR,male ,casein,malt,IG_FosTRAP_male/Folder_20220618/,FT119_1A_14.vsi,FT119_2A_15.vsi,none
+FT120,PR,male ,casein,casein,IG_FosTRAP_male/Folder_20220618/,FT120_1A_16.vsi,FT120_2A_17.vsi,none
+FT126,PR,male ,casein,casein,IG_FosTRAP_male/Folder_20220623/,FT126_1A_01.vsi,FT126_2A_02.vsi,none
+FT127,NR,male ,casein,water,IG_FosTRAP_male/Folder_20220623/,FT127_1A_03.vsi,FT127_2A_04.vsi,none
+FT128,NR,male ,casein,casein,IG_FosTRAP_male/Folder_20220623/,FT128_1A_05.vsi,FT128_2A_06.vsi,none
+FT131,PR,male ,casein,water,IG_FosTRAP_male/Folder_20220623/,FT131_1A_07.vsi,FT131_2A_08.vsi,none
+FT132,NR,male ,casein,malt,IG_FosTRAP_male/Folder_20220623/,FT132_1A_09.vsi,FT132_2A_10.vsi,none
+FT133,NR,male ,casein,water,IG_FosTRAP_male/Folder_20220623/,FT133_1A_11.vsi,FT133_2A_12.vsi,none
+FT134,PR,male ,casein,casein,IG_FosTRAP_male/Folder_20220623/,FT134_1A_13.vsi,FT134_2A_14.vsi,none
+FT136,PR,male ,casein,water,IG_FosTRAP_male/Folder_20220624/,FT136_1A_15.vsi,FT136_2A_16.vsi,none
+FT137,PR,male ,casein,casein,IG_FosTRAP_male/Folder_20220624/,FT137_1A_17.vsi,FT137_2A_18.vsi,none
+FT102,PR,female,casein,casein,IG_FosTRAP_female/,Image_02.vsi,Image_03.vsi,none
+FT103,PR,female,casein,water,IG_FosTRAP_female/,Image_04.vsi,Image_05.vsi,none
+FT104,NR,female,casein,casein,IG_FosTRAP_female/,Image_06.vsi,none,none
+FT105,NR,female,casein,water,IG_FosTRAP_female/,Image_07.vsi,Image_08.vsi,none
+FT114,NR,female,casein,malt,IG_FosTRAP_female/,Image_09.vsi,Image_10.vsi,none
+FT116,PR,female,casein,casein,IG_FosTRAP_female/,Image_11.vsi,Image_12.vsi,none
+FT148,PR,female,casein,water,IG_FosTRAP_female/,Image_27.vsi,Image_28.vsi,none
+FT149,PR,female,casein,malt,IG_FosTRAP_female/,Image_29.vsi,Image_30.vsi,none
+FT150,NR,female,casein,water,IG_FosTRAP_female/,Image_31.vsi,Image_32.vsi,none
+FT153,PR,female,casein,water,IG_FosTRAP_female/,Image_35.vsi,Image_36.vsi,none
+FT154,PR,female,casein,casein,IG_FosTRAP_female/,Image_37.vsi,Image_38.vsi,none
+FT155,NR,female,casein,water,IG_FosTRAP_female/,Image_39.vsi,Image_40.vsi,none
+FT156,NR,female,casein,casein,IG_FosTRAP_female/,Image_41.vsi,Image_42.vsi,none
+FT160,NR,female,casein,malt ,IG_FosTRAP_female/,Image_43.vsi,Image_44.vsi,none
+FT163,NR,female,casein,malt ,IG_FosTRAP_female/,Image_45.vsi,Image_46.vsi,none
+FT164,NR,female,casein,malt ,IG_FosTRAP_female/,Image_47.vsi,Image_48.vsi,none
+FT166,PR,female,casein,malt ,IG_FosTRAP_female/,Image_50.vsi,Image_51.vsi,none
+FT167,PR,female,casein,water,IG_FosTRAP_female/,Image_52.vsi,Image_53.vsi,none
+FT168,PR,female,casein,malt ,IG_FosTRAP_female/,Image_54.vsi,Image_55.vsi,none
+FT138,NR,female ,casein,water,IG_FosTRAP_female/,Image_13.vsi,Image_14.vsi,none
+FT139,NR,female ,casein,casein,IG_FosTRAP_female/,Image_15.vsi,Image_16.vsi,none
+FT140,PR,female ,casein,malt,IG_FosTRAP_female/,Image_17.vsi,Image_18.vsi,none
+FT141,PR,female ,casein,water,IG_FosTRAP_female/,Image_19.vsi,Image_20.vsi,none
+FT144,NR,female ,casein,malt,IG_FosTRAP_female/,Image_21.vsi,Image_22.vsi,none
+FT145,NR,female ,casein,casein,IG_FosTRAP_female/,Image_23.vsi,Image_24.vsi,none
+FT147,PR,female ,casein,malt,IG_FosTRAP_female/,Image_25.vsi,Image_26.vsi,none
+FT151,PR,female ,casein,casein,IG_FosTRAP_female/,Image_33.vsi,Image_34.vsi,none
